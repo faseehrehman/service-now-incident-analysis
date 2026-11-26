@@ -1,6 +1,6 @@
 # Screenshots
 
-![Incident Overview Dashboard](overview.png)
+![Incident Overview Dashboard](Overview.png)
 
 ![Service Demand](ServiceDemand.png)
 
