@@ -2,21 +2,44 @@
 
 ## Project Overview
 
-This portfolio project demonstrates how ServiceNow incident data can be analysed in Power BI to understand support demand, incident priorities, affected services, callers and assignment-group workload.
+This project uses Power BI to analyse ServiceNow incident data and provide a clearer view of IT support demand across applications, users and support teams.
 
-The original analysis was based on approximately 7,910 incident records from 2026. Because the source data relates to a workplace environment, the original dataset is not published. The `data` folder contains a small synthetic sample that demonstrates the intended structure without exposing company, employee, customer or system information.
+The report is structured across three reusable analytical pages. *Overview* provides headline KPIs and monthly incident trends. *Service Demand* explores which affected services generate the most incidents and how concentrated that demand is. *Callers & Teams* examines who is raising incidents, how tickets are distributed across assignment groups, and the priority profile of support demand.
+
+Rather than focusing solely on total ticket volumes, this project has been designed to identify patterns in where incidents originate, which services generate the most support demand, and where further investigation and process improvements may be valuable.
 
 ## Project Objectives
 
-The analysis is designed to answer practical operational questions:
+The report was developed to:
 
-1. How many incidents were raised during the reporting period?
-2. Which priorities and statuses account for the highest volumes?
-3. Which affected services generate the most support demand?
-4. Which anonymised callers raise the most incidents?
-5. How is workload distributed across anonymised assignment groups?
-6. How does incident demand change over time?
-7. Are incidents concentrated among a relatively small number of services?
+- Develop reusable KPIs for monitoring incident demand.
+- Monitor overall incident volumes and how demand changes over time.
+- Measure how much of the total incident demand is concentrated within the highest-volume services.
+- Identify callers responsible for the greatest number of incidents logged.
+- Analyse how incidents and workloads are distributed across assignment groups.
+- Understand the priority profile of incidents across the support workload.
+- Use these patterns to highlight recurring service issues, areas for deeper investigation and opportunities for process improvement.
+
+## Business Questions
+
+### Overall Incident Demand
+
+1. How does incident volume change month by month?
+2. How many incidents are currently open versus closed?
+3. How many high-priority or critical incidents are being raised?
+
+### Service Demand
+
+1. Which affected services generate the highest number of incidents?
+2. How much of total incident demand is concentrated within the highest-volume services?
+3. Are particular services generating disproportionately high support demand?
+
+### Callers & Teams
+
+1. Which anonymised callers are raising the most incidents?
+2. How concentrated is incident demand among the highest-volume callers?
+3. Which assignment groups are handling the largest incident volumes?
+4. How is incident priority distributed across the support workload?
 
 ## Tools Used
 
@@ -28,82 +51,110 @@ The analysis is designed to answer practical operational questions:
 
 ## Dataset
 
-The original analysis used approximately 7,910 incident rows from 2026. Relevant analytical fields included incident date, status, priority, affected/impacted service, caller and assignment group.
+The original analysis was developed using approximately 7,910 ServiceNow incident records from 2026. The dataset included fields such as incident date, status, priority, affected/impacted service, caller and assignment group.
 
-The original organisational dataset is deliberately excluded from this public portfolio. `data/sample_incidents.csv` is synthetic and is provided only to illustrate the expected schema.
+The original organisational dataset is not included in this public portfolio. A synthetic dataset is provided in `data/sample_incidents.csv` to demonstrate the structure of the data without exposing organisational or personal information.
 
 ## Data Preparation
 
-Before analysis, the workflow should include:
+Before building the report, the incident data was reviewed and prepared for analysis. This included:
 
-- validating data types, particularly incident dates;
-- checking blank and inconsistent category values;
-- standardising fields used for grouping and filtering;
-- checking for duplicate records where appropriate;
-- validating row counts after transformation; and
-- reviewing fields for confidential or personally identifiable information before publication.
+- Validating data types, particularly incident date fields.
+- Checking for blank or inconsistent values.
+- Standardising fields used for grouping and filtering.
+- Checking for duplicate records where appropriate.
+- Validating row counts after transformation.
+- Reviewing fields for confidential or personally identifiable information before publication.
 
-## Power BI Report
+Power Query was used to prepare the data before it was loaded into the Power BI model.
 
-The report is designed with separate overview and deeper-analysis pages rather than placing every visual on a single page.
+## Power BI Dashboard
+
+The dashboard is separated into three analytical pages so that high-level monitoring and deeper analysis can be performed without overcrowding a single report page.
 
 ### Overview
 
-The overview should give a quick picture of overall support demand using headline KPIs and concise breakdowns of status, priority and affected services.
+The *Overview* page provides a high-level view of incident demand using headline KPIs and monthly incident trends.
 
-Add a sanitised screenshot here as:
+The page allows overall support activity to be monitored while providing visibility of open and closed incidents, closure rate, higher-priority incidents and changes in demand throughout the reporting period.
 
-`./screenshots/overview.png`
+![Incident Overview](./screenshots/Overview.png)
 
-### Analysis
+### Service Demand
 
-The analysis page should focus on where demand is concentrated, including affected services, caller volumes, assignment groups and other patterns that warrant further investigation.
+The *Service Demand* page focuses on identifying which affected services generate the greatest incident demand.
 
-Add a sanitised screenshot here as:
+The analysis provides visibility of the highest-volume affected service, the number and proportion of incidents associated with that service, and how incident demand is distributed across other affected services.
 
-`./screenshots/analysis.png`
+This provides a starting point for identifying services where recurring incidents or concentrated demand may justify further investigation.
+
+![Service Demand](./screenshots/ServiceDemand.png)
+
+### Callers & Teams
+
+The *Callers & Teams* page explores where incidents originate and how support demand is distributed across callers and assignment groups.
+
+Caller analysis highlights which anonymised users are responsible for the highest incident volumes, while assignment group analysis shows where support workload is concentrated. Priority analysis provides additional context around the type of incidents being handled.
+
+![Callers & Teams](./screenshots/Callers&Teams.png)
 
 ## DAX
 
-Representative measures and explanations are documented in [`dax/measures.md`](dax/measures.md).
+DAX measures were created to support the KPIs and analysis used throughout the report.
+
+These include measures for overall incident volumes, filtered incident counts and service-level analysis. Representative measures and explanations are documented in [`dax/measures.md`](dax/measures.md).
+
+Separating the calculations into measures allows the report to respond dynamically to slicers and filters while keeping KPI calculations consistent across report pages.
 
 ## Analytical Interpretation
 
-The purpose of this project is not simply to identify the largest bar on a chart. High incident volume can indicate an area worth investigating, but it is not by itself evidence that a service is unreliable or that a caller is using a system incorrectly.
+The dashboard is designed to identify patterns and areas that may require further investigation rather than treating incident volume alone as evidence of a problem.
 
-Useful follow-up analysis could compare service incident volume with user population, transaction volume, recurring categories and resolution performance.
+For example, a service generating a high number of incidents may represent an area of concern, but the volume could also be influenced by the number of users, transaction volumes or how widely the service is used.
 
-## Key Findings Structure
+Similarly, a caller raising a high number of incidents does not necessarily indicate incorrect system use. The analysis identifies where demand originates so that the underlying reasons can be investigated further.
 
-When publishing the final portfolio, use evidence from the sanitised report to document findings such as:
+This distinction is important when using operational support data to make business decisions.
 
-- services contributing the greatest share of incident demand;
-- the distribution of incidents by priority and status;
-- concentrations of workload across assignment groups;
-- periods with unusually high or low incident volumes; and
-- repeat patterns that could justify root-cause investigation, documentation or automation.
+## Key Findings
 
-Do not publish findings copied from confidential production data unless they have been approved for public disclosure.
+The analysis provides visibility of several important patterns in support demand:
+
+- Incident demand changes throughout the reporting period rather than remaining constant month by month.
+- Affected services can be ranked by incident volume to identify where support demand is most concentrated.
+- Service-level contribution measures provide additional context by showing how much of overall demand is associated with the highest-volume services.
+- Caller analysis highlights where incident demand is concentrated among anonymised users.
+- Assignment group analysis shows how incident workload is distributed across support teams.
+- Priority analysis provides context around the severity profile of the overall incident workload.
+
+These findings are intended to identify areas for further investigation rather than establish root cause directly.
 
 ## Limitations
 
+The analysis also has several limitations that should be considered when interpreting the results:
+
 - Incident volume alone does not measure application reliability.
-- High-volume services may have larger user populations or transaction volumes.
-- Caller volume should not be interpreted as individual performance or behaviour.
-- Assignment group data can represent routing rather than the team that ultimately resolved an incident.
-- A 2026-only dataset does not establish longer-term trends.
+- High-volume services may also have larger user populations or transaction volumes.
+- Caller volumes should not be interpreted as individual performance or behaviour.
+- Assignment group data may represent ticket routing rather than the team that ultimately resolved an incident.
+- The current dataset covers 2026 and therefore does not establish longer-term trends.
 - Additional categorisation and resolution data would support deeper root-cause and service-performance analysis.
 
 ## Potential Next Steps
 
-- Analyse resolution time by priority and affected service.
-- Identify recurring incident categories.
-- Compare incident demand with application user populations.
-- Investigate repeat incidents and high-frequency issues.
-- Assess whether knowledge articles or automation could reduce common support requests.
-- Extend the dataset across multiple years for trend and seasonality analysis.
+The analysis could be extended further by:
+
+- Analysing resolution time by priority and affected service.
+- Identifying recurring incident categories and common issue types.
+- Comparing incident demand with application user populations.
+- Investigating repeat incidents and high-frequency issues.
+- Analysing whether knowledge articles or automation could reduce common support requests.
+- Comparing multiple years of incident data to identify longer-term trends and seasonality.
+- Adding resolution and service-level metrics to understand whether high-volume services also experience longer resolution times.
 
 ## Skills Demonstrated
+
+This project demonstrates practical experience in:
 
 - Power BI report development
 - DAX
@@ -114,15 +165,17 @@ Do not publish findings copied from confidential production data unless they hav
 - Data visualisation
 - Analytical interpretation
 - Business problem solving
-- Data confidentiality awareness
+- Data confidentiality and anonymisation
 
 ## Repository Structure
 
-- `data/` - synthetic example data only
-- `dax/` - representative DAX measures and explanations
-- `docs/` - methodology and publication guidance
-- `screenshots/` - sanitised Power BI screenshots
+- `data/` - Synthetic example data used to demonstrate the dataset structure.
+- `dax/` - Representative DAX measures and explanations.
+- `docs/` - Supporting methodology and project documentation.
+- `screenshots/` - Sanitised screenshots of the Power BI report.
 
-## Confidentiality
+## Data Confidentiality
 
-This repository is designed as a public portfolio case study. It must not contain production exports, real employee or customer details, internal URLs, server names, IP addresses, credentials, API keys, connection strings, confidential ticket descriptions or other proprietary information.
+This project is based on analysis of operational support data. The original organisational dataset is not included in the public repository.
+
+The public version uses anonymised screenshots and synthetic sample data so that the analytical approach can be demonstrated without exposing employee details, incident identifiers, confidential ticket information, internal system information or other organisational data.
