@@ -1,0 +1,101 @@
+Incident,Opened Date,Status,Priority,Affected/Impacted Service,Caller,Assignment Group
+SYN00001,2026-11-24 03:01,Resolved,P3 - Moderate,Service A,User 04,Support Group A
+SYN00002,2026-10-30 13:02,Closed,P3 - Moderate,Service B,User 01,Support Group B
+SYN00003,2026-11-29 22:34,Closed,P3 - Moderate,Service A,User 01,Support Group B
+SYN00004,2026-12-24 13:21,Closed,P3 - Moderate,Service D,User 04,Support Group A
+SYN00005,2026-07-14 03:22,Open,P3 - Moderate,Service D,User 15,Support Group A
+SYN00006,2026-07-13 02:35,Closed,P3 - Moderate,Service D,User 12,Support Group B
+SYN00007,2026-12-27 02:02,Resolved,P4 - Low,Service E,User 08,Support Group A
+SYN00008,2026-07-14 08:29,Resolved,P3 - Moderate,Service B,User 07,Support Group C
+SYN00009,2026-12-26 21:41,Closed,P3 - Moderate,Service B,User 08,Support Group B
+SYN00010,2026-08-25 12:17,In Progress,P3 - Moderate,Service C,User 11,Support Group A
+SYN00011,2026-04-28 01:51,Closed,P3 - Moderate,Service A,User 19,Support Group C
+SYN00012,2026-04-19 20:31,Closed,P4 - Low,Service B,User 09,Support Group B
+SYN00013,2026-05-07 23:35,Closed,P4 - Low,Service B,User 19,Support Group D
+SYN00014,2026-07-05 07:08,Closed,P2 - High,Service A,User 04,Support Group B
+SYN00015,2026-11-18 05:50,Resolved,P3 - Moderate,Service B,User 20,Support Group D
+SYN00016,2026-09-28 08:35,Open,P1 - Critical,Service C,User 18,Support Group C
+SYN00017,2026-11-25 10:07,Closed,P3 - Moderate,Service A,User 09,Support Group B
+SYN00018,2026-09-17 03:55,Resolved,P4 - Low,Service B,User 07,Support Group B
+SYN00019,2026-07-11 05:34,In Progress,P4 - Low,Service E,User 20,Support Group C
+SYN00020,2026-09-08 00:07,In Progress,P4 - Low,Service D,User 10,Support Group B
+SYN00021,2026-01-30 07:56,Resolved,P2 - High,Service C,User 03,Support Group B
+SYN00022,2026-03-07 21:30,In Progress,P3 - Moderate,Service B,User 20,Support Group D
+SYN00023,2026-04-19 17:48,Resolved,P3 - Moderate,Service B,User 12,Support Group D
+SYN00024,2026-09-22 14:07,Closed,P2 - High,Service A,User 18,Support Group B
+SYN00025,2026-10-29 07:00,Closed,P3 - Moderate,Service A,User 02,Support Group C
+SYN00026,2026-02-06 16:15,Closed,P3 - Moderate,Service B,User 19,Support Group D
+SYN00027,2026-05-05 15:51,Closed,P2 - High,Service C,User 12,Support Group D
+SYN00028,2026-07-30 14:55,Resolved,P3 - Moderate,Service E,User 04,Support Group A
+SYN00029,2026-07-26 23:21,Open,P2 - High,Service A,User 18,Support Group D
+SYN00030,2026-03-13 13:11,Closed,P3 - Moderate,Service E,User 15,Support Group A
+SYN00031,2026-01-26 20:34,Open,P4 - Low,Service E,User 08,Support Group B
+SYN00032,2026-07-28 15:30,Closed,P3 - Moderate,Service A,User 13,Support Group A
+SYN00033,2026-07-19 08:59,Resolved,P3 - Moderate,Service B,User 18,Support Group D
+SYN00034,2026-03-21 06:18,Closed,P2 - High,Service C,User 02,Support Group C
+SYN00035,2026-01-30 01:37,Closed,P4 - Low,Service B,User 02,Support Group A
+SYN00036,2026-04-06 02:38,Closed,P4 - Low,Service B,User 19,Support Group B
+SYN00037,2026-10-24 19:02,Resolved,P3 - Moderate,Service C,User 17,Support Group C
+SYN00038,2026-05-14 06:42,Resolved,P3 - Moderate,Service B,User 10,Support Group D
+SYN00039,2026-06-11 02:00,Closed,P4 - Low,Service E,User 03,Support Group B
+SYN00040,2026-09-17 08:08,In Progress,P4 - Low,Service D,User 12,Support Group C
+SYN00041,2026-03-22 14:53,Closed,P3 - Moderate,Service E,User 17,Support Group A
+SYN00042,2026-12-08 17:19,In Progress,P2 - High,Service D,User 09,Support Group A
+SYN00043,2026-02-24 23:35,Closed,P3 - Moderate,Service A,User 11,Support Group B
+SYN00044,2026-12-18 20:54,Closed,P3 - Moderate,Service E,User 02,Support Group A
+SYN00045,2026-11-21 13:53,Closed,P1 - Critical,Service D,User 09,Support Group B
+SYN00046,2026-08-15 17:45,Closed,P1 - Critical,Service A,User 05,Support Group A
+SYN00047,2026-07-09 18:35,Closed,P2 - High,Service B,User 02,Support Group C
+SYN00048,2026-04-18 21:15,Resolved,P3 - Moderate,Service C,User 14,Support Group B
+SYN00049,2026-05-02 05:51,Open,P4 - Low,Service A,User 11,Support Group D
+SYN00050,2026-12-09 23:51,Closed,P3 - Moderate,Service C,User 13,Support Group A
+SYN00051,2026-08-29 07:12,Open,P3 - Moderate,Service B,User 08,Support Group B
+SYN00052,2026-01-13 21:12,Closed,P3 - Moderate,Service A,User 09,Support Group C
+SYN00053,2026-11-25 16:25,Resolved,P4 - Low,Service B,User 01,Support Group A
+SYN00054,2026-05-14 05:37,In Progress,P3 - Moderate,Service A,User 14,Support Group C
+SYN00055,2026-06-10 13:38,In Progress,P2 - High,Service D,User 07,Support Group C
+SYN00056,2026-01-23 22:27,Closed,P4 - Low,Service B,User 07,Support Group C
+SYN00057,2026-08-09 02:42,In Progress,P3 - Moderate,Service C,User 04,Support Group C
+SYN00058,2026-09-17 09:42,Closed,P3 - Moderate,Service A,User 05,Support Group B
+SYN00059,2026-08-04 21:24,Resolved,P4 - Low,Service C,User 10,Support Group D
+SYN00060,2026-10-08 00:19,Closed,P3 - Moderate,Service C,User 11,Support Group D
+SYN00061,2026-08-15 14:43,Closed,P3 - Moderate,Service E,User 06,Support Group A
+SYN00062,2026-05-26 16:42,Resolved,P3 - Moderate,Service D,User 08,Support Group C
+SYN00063,2026-04-26 06:09,Closed,P3 - Moderate,Service B,User 03,Support Group D
+SYN00064,2026-08-01 20:36,Closed,P3 - Moderate,Service B,User 08,Support Group B
+SYN00065,2026-12-02 22:00,In Progress,P4 - Low,Service D,User 14,Support Group B
+SYN00066,2026-04-01 22:33,Closed,P3 - Moderate,Service E,User 04,Support Group D
+SYN00067,2026-03-10 14:42,Closed,P3 - Moderate,Service B,User 15,Support Group D
+SYN00068,2026-10-08 14:57,Closed,P4 - Low,Service B,User 08,Support Group C
+SYN00069,2026-09-24 15:40,Closed,P3 - Moderate,Service C,User 08,Support Group C
+SYN00070,2026-06-21 10:57,Closed,P2 - High,Service A,User 05,Support Group B
+SYN00071,2026-02-02 13:26,Closed,P3 - Moderate,Service A,User 14,Support Group D
+SYN00072,2026-10-27 22:01,Open,P4 - Low,Service B,User 01,Support Group C
+SYN00073,2026-06-02 12:54,In Progress,P4 - Low,Service B,User 18,Support Group B
+SYN00074,2026-09-07 07:17,Closed,P2 - High,Service B,User 13,Support Group B
+SYN00075,2026-08-28 04:39,Closed,P4 - Low,Service C,User 01,Support Group A
+SYN00076,2026-11-26 13:08,Open,P3 - Moderate,Service A,User 11,Support Group B
+SYN00077,2026-08-21 10:21,Resolved,P3 - Moderate,Service D,User 14,Support Group C
+SYN00078,2026-02-11 15:01,Resolved,P2 - High,Service E,User 08,Support Group A
+SYN00079,2026-11-30 01:48,Closed,P3 - Moderate,Service D,User 20,Support Group B
+SYN00080,2026-05-03 04:30,Resolved,P3 - Moderate,Service A,User 09,Support Group C
+SYN00081,2026-03-27 19:38,In Progress,P3 - Moderate,Service D,User 06,Support Group C
+SYN00082,2026-02-25 18:01,In Progress,P3 - Moderate,Service E,User 13,Support Group D
+SYN00083,2026-04-12 02:37,Resolved,P3 - Moderate,Service A,User 10,Support Group A
+SYN00084,2026-10-17 01:22,Closed,P3 - Moderate,Service A,User 11,Support Group A
+SYN00085,2026-08-04 15:06,Closed,P3 - Moderate,Service D,User 15,Support Group B
+SYN00086,2026-08-11 05:46,Closed,P3 - Moderate,Service C,User 18,Support Group D
+SYN00087,2026-08-27 13:52,Resolved,P3 - Moderate,Service D,User 03,Support Group C
+SYN00088,2026-08-19 07:48,Closed,P3 - Moderate,Service B,User 01,Support Group D
+SYN00089,2026-06-16 05:31,Closed,P4 - Low,Service B,User 20,Support Group C
+SYN00090,2026-10-12 00:33,In Progress,P2 - High,Service C,User 16,Support Group B
+SYN00091,2026-12-20 15:41,Resolved,P3 - Moderate,Service A,User 10,Support Group B
+SYN00092,2026-07-27 22:15,Closed,P3 - Moderate,Service B,User 17,Support Group C
+SYN00093,2026-08-06 23:35,Closed,P3 - Moderate,Service A,User 09,Support Group B
+SYN00094,2026-03-03 23:12,Closed,P4 - Low,Service E,User 06,Support Group B
+SYN00095,2026-04-21 23:30,Closed,P3 - Moderate,Service D,User 20,Support Group C
+SYN00096,2026-02-21 06:18,Closed,P3 - Moderate,Service A,User 18,Support Group B
+SYN00097,2026-05-21 01:03,Resolved,P3 - Moderate,Service A,User 16,Support Group A
+SYN00098,2026-01-07 18:18,Closed,P3 - Moderate,Service A,User 02,Support Group C
+SYN00099,2026-09-02 03:52,Closed,P3 - Moderate,Service C,User 02,Support Group B
+SYN00100,2026-03-18 18:19,Closed,P3 - Moderate,Service C,User 14,Support Group B
