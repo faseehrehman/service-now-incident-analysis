@@ -53,7 +53,7 @@ The report was developed to:
 
 The original analysis was developed using approximately 7,910 ServiceNow incident records from 2026. The dataset included fields such as incident date, status, priority, affected/impacted service, caller and assignment group.
 
-The original organisational dataset is not included in this public portfolio. A synthetic dataset is provided in `data/sample_incidents.csv` to demonstrate the structure of the data without exposing organisational or personal information.
+The original organisational dataset is not included in this public portfolio. A synthetic dataset is provided in `DemoSnowData.xlsx` to demonstrate the structure of the data without exposing organisational or personal information.
 
 ## Data Preparation
 
